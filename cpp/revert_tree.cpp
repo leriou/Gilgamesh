@@ -12,15 +12,15 @@ struct tree {
 };
 
 std::ostream& operator<<(std::ostream& os, tree& t) {
-    os << "        " << t._value << std::endl;
-    os << "     /     \\" << std::endl;
+    os << "           " << t._value << std::endl;
+    os << "       /      \\" << std::endl;
     os << "     " << t._left->_value;
-    os << "        " << t._right->_value << std::endl;
+    os << "          " << t._right->_value << std::endl;
     os << "  /    \\      /   \\" << std::endl;
     os << "" << t._left->_left->_value;
     os << "        " << t._left->_right->_value;
     os << "   " << t._right->_left->_value;
-    os << "       " << t._right->_right->_value;
+    os << "      " << t._right->_right->_value;
     return os;
 }
 
