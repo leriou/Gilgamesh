@@ -17,8 +17,7 @@ double calculate_circle_perimeter(double r) {
                    // 那就不能在main 或者calculate_circle_area 这个函数中使用
 
     if (true) {
-        int bh =
-            89;  // 同样的if 后面有{} , 所以里面定义的bh 变量也不能在if 外面使用
+        int bh = 89;  // 同样的if 后面有{} , 所以里面定义的bh 变量也不能在if 外面使用
     }
 
     // cout << bh << endl; // 会报错
@@ -29,10 +28,10 @@ double calculate_circle_perimeter(double r) {
 double calculate_circle_area(double r) { return PI * r * r; }
 
 class Shape {
-      protected:
+    protected:
     int width, height;
 
-      public:
+    public:
     Shape(int a = 0, int b = 0) {
         width  = a;
         height = b;
