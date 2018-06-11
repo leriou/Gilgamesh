@@ -1,16 +1,19 @@
 #include<stdio.h>
+#include<math.h>
 #include"calculator.h"
 
 
 int main(){
-    // printf( "%f",calculate_pi(100000));
-    printf("%d", (int)fibonacci(20));
+    // printf( "%f",calculate_pi(100000000));
+    printf("%d", (int)fibonacci(43));
     return 0;
 }
 
 double calculate_pi(int n){
-    double p = 1;
-    return 6 * p;
+    double p = 0.0;
+    for (int i = 1; i< n;i++)
+        p += (double)1/pow(i,2);
+    return sqrt(6*p);
 }
 
 int fibonacci(int n) {
