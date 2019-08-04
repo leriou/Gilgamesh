@@ -22,7 +22,7 @@ double calculate_circle_perimeter(double r) {
 
     // cout << bh << endl; // 会报错
 
-    return 2 * PI * r;  // 我们可以在函数内部直接使用函数外的变量但是不能再
+    return 2 * PI * r;  // 我们可以在函数内部直接使用函数外的全局变量但是反过来不行
 }
 
 double calculate_circle_area(double r) { return PI * r * r; }
@@ -42,7 +42,7 @@ class Shape {
     }
 };
 class Rectangle : public Shape {
-      public:
+    public:
     Rectangle(int a = 0, int b = 0) : Shape(a, b) {}
     int area() {
         cout << "Rectangle class area :" << endl;
