@@ -105,11 +105,6 @@ treap T;
 int main()
 {
 
-	vector<int> a;
-	a.push_back(9);
-
-	printf("", a);
-
 	int i;
 	for (i = 3; i >= 1; i--)
 		T.insert(T.root, i);
